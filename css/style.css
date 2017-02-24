@@ -1,0 +1,200 @@
+body{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background:#F8F7F7;
+}
+#start{
+	padding: 5.3em 0;
+}
+.top{
+	padding: 7em 0;
+}
+.navbar-inverse{
+	padding: .7em;
+	font-size: 17px;
+	background: rgba(0, 0, 0, 0.9);
+
+}
+
+
+.image{
+    position: relative;
+    background: url('../img/gitara.jpg') center 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 90vh; 
+
+}
+.boxes{
+	position: absolute;
+	left: 5%;
+	bottom: 10%;
+	width: 95%;	
+}
+
+.rectangle-header{
+	width: 40%;	
+	background: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	bottom:60%;
+	padding: 3em 1em;
+	color: black;
+	border: 2px solid black;
+	-webkit-box-shadow: 0 0 4px;
+	box-shadow: 0 0 4px;	
+	z-index: 1;
+	color: white;
+}
+.rectangle-header::before{
+	content: '';
+	width: 90px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: -6%;
+	top:-20%;
+	padding: 3em 1em;
+	border: 2px solid black;
+	-webkit-box-shadow: 0 0 4px;
+	box-shadow: 0 0 4px;
+	
+}
+
+.caption-header{
+	margin-top: 20%;	
+	text-align: center;
+	float: none;
+	color: white;
+}
+
+.best-ofert{ 	 	
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease; 
+	z-index:17 ;
+}
+.carousel-indicators li { display: none; }
+.best-ofert:hover{
+
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05) ;
+	transform: scale(1.05) ;
+
+	background: transparent;	
+	-webkit-box-shadow: 0 0 5px black;	
+	box-shadow: 0 0 5px black;
+
+}
+.break{
+	width: 100%;	
+	background: rgba(100, 100, 100, 0.3);
+	padding: 2em .5em;
+	border-bottom: 1px solid black;
+	margin-bottom: 4em;
+}
+.btn-scroll{
+	position: absolute;
+	bottom: -80px;
+	left: 45%;
+	 -webkit-animation: mymove .8s infinite alternate;  
+	 animation: mymove .8s infinite alternate; 
+	z-index: 20;
+
+}
+.btn-scroll img{
+	width: 100px;
+}
+
+.nakladka-top{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: 0;
+}
+.nakladka-bottom{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+}
+.butt{
+	padding: 2em;
+	background: blue;
+}
+.ripple {
+  position: relative;
+  overflow: hidden;
+
+}
+.ripple:after {
+  content: "";  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle, #000 10%, transparent 10%);
+  transform: scale(10);
+  opacity: 0;
+  
+  transition: transform .5s, opacity 1s;
+}
+.ripple:active:after {
+
+  transform: scale(1.2);
+  opacity: .1;
+  transition: 0s;
+}
+.footer-end{
+	background: black;
+	padding: 1em;
+	color: white;
+	font-size: 10px;	
+}
+.footer{
+	background: url('../img/footer5.jpg') center;
+	width: 100%;
+	height: 100%;
+	color:white;
+	padding: 10em 0;
+	font-size: 24px;
+	position: relative;
+}
+
+@-webkit-keyframes mymove {
+    from {bottom: -40px;}
+    to {bottom: -60px;}
+}
+@keyframes mymove {
+    from {bottom: -40px;}
+    to {bottom: -60px;}
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
